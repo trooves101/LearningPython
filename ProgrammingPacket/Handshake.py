@@ -1,13 +1,19 @@
 file = open("handshake.dat", "r")
 
-sick = ["Employee_A"]
-healthy = []
+sick = []
+companies = []
+for x in range(int(file.readline())):
+    employees = {}
+    companies.append(employees)
+    amt = int(file.readline())
+    for i in range(amt):
+        shaker, shakees = file.readline().split(':')
+        shaker = shaker.strip()
+        shakees = list(map(str.strip, shakees.split(',')))
+        employees[shaker] = shakees
+    sick = employees
 
-for i in range(int(file.readline())):
-    for f in range(int(file.readline())):
-        line = file.readline()
-        first_index = line.index(" ")
-        healthy.append(line[:first_index].strip())
-        healthy.append(line[first_index+3:].strip())
-    print(healthy)
-    healthy.clear()
+
+for company in companies:
+    for shaker, shakees in company.items():
+        print(sick)
