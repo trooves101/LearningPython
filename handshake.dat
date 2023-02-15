@@ -1,0 +1,17 @@
+2
+4
+Employee_A : Employee_B
+Employee_B : Employee_A
+Employee_C : Employee_D
+Employee_D : Employee_C
+10
+Mike_Scarn : Dr._Avocado's_Cousin, Joe
+Joe : Security_Officer, Mike_Scarn
+Other_Joe : The_Bald_Guy
+Dr._Avocado : Dr._Avocado's_Cousin, Tina_Avocado
+Dr._Avocado's_Cousin : Dr._Avocado, Tina_Avocado, Mike_Scarn
+The_Bald_Guy : Other_Joe
+Lex : Security_Officer
+Tina_Avocado : Dr._Avocado, Dr._Avocado's_Cousin
+That_Guy_That_Wears_No_Socks : 
+Security_Officer : Joe, Lex
